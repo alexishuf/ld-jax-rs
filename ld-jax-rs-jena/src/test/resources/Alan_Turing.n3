@@ -1,0 +1,380 @@
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+@prefix dbr:	<http://dbpedia.org/resource/> .
+dbr:Jack_Copeland	dbo:knownFor	dbr:Alan_Turing .
+dbr:Noam_Chomsky	dbo:influencedBy	dbr:Alan_Turing .
+@prefix dbp:	<http://dbpedia.org/property/> .
+dbr:Noam_Chomsky	dbp:influences	dbr:Alan_Turing .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbr:Turning	owl:differentFrom	dbr:Alan_Turing .
+dbr:Ludwig_Wittgenstein	dbo:influenced	dbr:Alan_Turing ;
+	dbp:influenced	dbr:Alan_Turing .
+dbr:Ned_Block	dbo:influencedBy	dbr:Alan_Turing ;
+	dbp:influences	dbr:Alan_Turing .
+dbr:Gisbert_Hasenjaeger	dbo:influencedBy	dbr:Alan_Turing ;
+	dbp:influences	dbr:Alan_Turing .
+dbr:Hilary_Putnam	dbo:influencedBy	dbr:Alan_Turing ;
+	dbp:influences	dbr:Alan_Turing .
+dbr:Metamagical_Themas	dbo:nonFictionSubject	dbr:Alan_Turing .
+<http://dbpedia.org/resource/Alan_M._Turing>	dbo:wikiPageRedirects	dbr:Alan_Turing .
+<http://dbpedia.org/resource/A._M._Turing>	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Allen_Touring	dbo:wikiPageRedirects	dbr:Alan_Turing .
+<http://dbpedia.org/resource/Turing,_A.M.>	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Alan_turing	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Alan_Mathison_Turing	dbo:wikiPageRedirects	dbr:Alan_Turing .
+<http://dbpedia.org/resource/A._Turing>	dbo:wikiPageRedirects	dbr:Alan_Turing .
+<http://dbpedia.org/resource/Alan_Mathison_Turing,_OBE,_FRS>	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Turing	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Alan_Turning	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Allan_Turing	dbo:wikiPageRedirects	dbr:Alan_Turing .
+dbr:Christopher_Morcom	dbo:wikiPageRedirects	dbr:Alan_Turing .
+<http://dbpedia.org/resource/Turing_(disambiguation)>	dbo:wikiPageDisambiguates	dbr:Alan_Turing .
+dbr:Alonzo_Church	dbo:doctoralStudent	dbr:Alan_Turing ;
+	dbp:doctoralStudents	dbr:Alan_Turing .
+dbr:Ilya_Prigogine	dbo:influencedBy	dbr:Alan_Turing .
+dbr:Heinrich_Scholz	dbo:influencedBy	dbr:Alan_Turing ;
+	dbp:influences	dbr:Alan_Turing .
+@prefix foaf:	<http://xmlns.com/foaf/0.1/> .
+@prefix wikipedia-en:	<http://en.wikipedia.org/wiki/> .
+wikipedia-en:Alan_Turing	foaf:primaryTopic	dbr:Alan_Turing .
+dbr:Stevan_Harnad	dbo:influencedBy	dbr:Alan_Turing .
+dbr:Robin_Gandy	dbo:doctoralAdvisor	dbr:Alan_Turing ;
+	dbp:doctoralAdvisor	dbr:Alan_Turing .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix yago:	<http://dbpedia.org/class/yago/> .
+dbr:Alan_Turing	rdf:type	yago:Philosopher110423589 ,
+		yago:Wikicat20th-centuryMathematicians ,
+		yago:Wikicat20th-centuryPhilosophers ,
+		yago:CognitiveScientist109934647 ,
+		yago:WikicatCognitiveScientists .
+@prefix wikidata:	<http://www.wikidata.org/entity/> .
+dbr:Alan_Turing	rdf:type	wikidata:Q901 ,
+		yago:Expert109617867 ,
+		yago:Organism100004475 ,
+		yago:Person100007846 ,
+		yago:Object100002684 ,
+		yago:Contestant109613191 ,
+		yago:LivingThing100004258 ,
+		yago:CausalAgent100007347 ,
+		dbo:Person ,
+		dbo:Agent ,
+		yago:WikicatBritishPeopleOfWorldWarII ,
+		yago:WikicatEnglishPhilosophers ,
+		foaf:Person ,
+		yago:WikicatPhilosophersWhoCommittedSuicide ,
+		yago:Runner110542888 ,
+		yago:WikicatLGBTPeopleFromTheUnitedKingdom ,
+		yago:WikicatEnglishPeopleOfScottishDescent ,
+		yago:ComputerScientist109951070 ,
+		yago:Inventor110214637 .
+@prefix umbel-rc:	<http://umbel.org/umbel/rc/> .
+dbr:Alan_Turing	rdf:type	umbel-rc:Scientist ,
+		yago:Serviceman110582746 ,
+		yago:SkilledWorker110605985 ,
+		yago:WikicatBritishPeople ,
+		yago:WikicatArtificialIntelligenceResearchers ,
+		yago:Scientist110560637 .
+@prefix schema:	<http://schema.org/> .
+dbr:Alan_Turing	rdf:type	schema:Person ,
+		yago:Professional110480253 ,
+		yago:Scholar110557854 ,
+		yago:Peer109626238 ,
+		yago:Intellectual109621545 ,
+		yago:WikicatEnglishAtheists ,
+		yago:Educator110045713 ,
+		yago:Colleague109935990 ,
+		yago:Associate109816771 ,
+		yago:Adult109605289 ,
+		yago:Mathematician110301261 ,
+		yago:Alumnus109786338 ,
+		dbo:Scientist ,
+		yago:WikicatBritishAtheists ,
+		yago:Academician109759069 ,
+		yago:Disbeliever110015897 ,
+		yago:NonreligiousPerson109625789 ,
+		yago:WikicatPeopleEducatedAtSherborneSchool ,
+		yago:WikicatPeopleFromWilmslow ,
+		yago:Cryptanalyst109981540 ,
+		yago:Decoder109995398 ,
+		yago:WikicatFellowsOfTheRoyalSociety ,
+		yago:WikicatPhilosophersOfMind ,
+		yago:WikicatPeopleAssociatedWithComputerSecurity ,
+		yago:Athlete109820263 .
+@prefix ns11:	<http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+dbr:Alan_Turing	rdf:type	ns11:NaturalPerson ,
+		yago:Creator109614315 ,
+		yago:WikicatBayesianStatisticians ,
+		umbel-rc:PersonWithOccupation ,
+		ns11:Agent ,
+		yago:Atheist109820044 ,
+		yago:ComputerUser109951274 ,
+		yago:WikicatAcademicsOfTheUniversityOfCambridge ,
+		yago:Programmer110481268 ,
+		wikidata:Q215627 ,
+		yago:MilitaryOfficer110317007 ,
+		yago:WikicatOfficersOfTheOrderOfTheBritishEmpire ,
+		yago:WikicatLGBTPeopleFromEngland ,
+		yago:WikicatLogicians ,
+		yago:WikicatBritishLogicians ,
+		yago:Logician110269785 ,
+		yago:Statistician110653238 ,
+		yago:Marathoner110292969 ,
+		wikidata:Q5 ,
+		yago:WikicatPeopleAssociatedWithBletchleyPark ,
+		yago:WikicatBritishComputerScientists ,
+		yago:WikicatTheoreticalComputerScientists ,
+		yago:WikicatComputerScientists ,
+		yago:WikicatLGBTPeople ,
+		yago:InteriorDesigner110210648 ,
+		yago:WikicatPeopleProsecutedUnderAnti-homosexualityLaws ,
+		yago:WikicatProgrammersWhoCommittedSuicide ,
+		yago:WikicatMathematiciansWhoCommittedSuicide ,
+		yago:WikicatPeopleFromMaidaVale ,
+		yago:WikicatLGBTScientists ,
+		yago:WikicatLGBTScientistsFromTheUnitedKingdom ,
+		yago:WikicatGovernmentCommunicationsHeadquartersPeople ,
+		yago:WikicatInventorsWhoCommittedSuicide ,
+		yago:WikicatEnglishLogicians ,
+		yago:WikicatGayMen ,
+		yago:WikicatComputabilityTheorists ,
+		yago:WikicatComputerDesigners ,
+		yago:WikicatEnglishComputerScientists ,
+		yago:WikicatBritishInformationTheorists ,
+		yago:WikicatBritishLong-distanceRunners ,
+		yago:WikicatAtheistPhilosophers ,
+		yago:WikicatBritishCryptographers ,
+		yago:WikicatAcademicsOfTheUniversityOfManchesterInstituteOfScienceAndTechnology ,
+		<http://dbpedia.org/class/yago/WikicatAlumniOfKing\u0027sCollege,Cambridge> ,
+		yago:GayMan110122645 ,
+		yago:Homosexual110182913 ,
+		owl:Thing ,
+		yago:WikicatEnglishAthletes ,
+		yago:Engineer109615807 ,
+		yago:Specialist110631941 ,
+		yago:WikicatPrincetonUniversityAlumni ,
+		yago:WikicatEnglishInventors ,
+		yago:WikicatAcademicsOfTheUniversityOfManchester ,
+		yago:YagoLegalActorGeo ,
+		yago:Worker109632518 ,
+		yago:YagoLegalActor ,
+		yago:WikicatBritishMathematicians ,
+		yago:PhysicalEntity100001930 ,
+		yago:Theorist110706812 ,
+		yago:WikicatEnglishMathematicians ,
+		yago:Whole100003553 ,
+		yago:ResearchWorker110523076 .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbr:Alan_Turing	rdfs:label	"Alan Turing"@nl ,
+		"\u30A2\u30E9\u30F3\u30FB\u30C1\u30E5\u30FC\u30EA\u30F3\u30B0"@ja ,
+		"Alan Turing"@en ,
+		"Alan Turing"@it ,
+		"Alan Turing"@pl ,
+		"\u0422\u044C\u044E\u0440\u0438\u043D\u0433, \u0410\u043B\u0430\u043D"@ru ,
+		"Alan Turing"@pt ,
+		"\u827E\u4F26\u00B7\u56FE\u7075"@zh ,
+		"Alan Turing"@fr ,
+		"Alan Turing"@de ,
+		"Alan Turing"@es ,
+		"\u0622\u0644\u0627\u0646 \u062A\u0648\u0631\u0646\u062C"@ar ;
+	rdfs:comment	"Alan Mathison Turing, n\u00E9 le  et mort le , est un math\u00E9maticien, cryptologue et informaticien britannique. Il est l'auteur d'un article de logique math\u00E9matique, paru en 1936 et devenu plus tard un des fondements scientifiques de l'informatique.Durant la Seconde Guerre mondiale, il joue un r\u00F4le majeur dans les recherches sur les cryptographies g\u00E9n\u00E9r\u00E9es par la machine Enigma, utilis\u00E9e par les arm\u00E9es allemandes. Ses m\u00E9thodes permirent de casser ce code et, selon plusieurs historiens, de raccourcir la capacit\u00E9 de r\u00E9sistance du r\u00E9gime nazi de deux ans."@fr ,
+		"Il suo lavoro ebbe vasta influenza sullo sviluppo dell'informatica, grazie alla sua formalizzazione dei concetti di algoritmo e calcolo mediante la macchina di Turing, che a sua volta ha svolto un ruolo significativo nella creazione del moderno computer. Per questi contributi Turing \u00E8 solitamente considerato il padre della scienza informatica e dell'intelligenza artificiale, da lui teorizzate gi\u00E0 negli anni trenta (quando non era ancora stato creato il primo vero computer)."@it ,
+		"Alan Mathison Turing OBE, FRS [\u02C8\u00E6l\u0259n \u02C8m\u00E6\u03B8\u026As\u0259n \u02C8tj\u028A\u0259\u0279\u026A\u014B] (* 23. Juni 1912 in London; \u2020  7. Juni 1954 in Wilmslow, Cheshire) war ein britischer Logiker, Mathematiker, Kryptoanalytiker und Informatiker. Er gilt heute als einer der einflussreichsten Theoretiker der fr\u00FChen Computerentwicklung und Informatik. Turing schuf einen gro\u00DFen Teil der theoretischen Grundlagen f\u00FCr die moderne Informations- und Computertechnologie. Als richtungsweisend erwiesen sich auch seine Beitr\u00E4ge zur theoretischen Biologie."@de ,
+		"Alan Mathison Turing  (23 de junho de 1912 \u2014 7 de junho de 1954) foi um matem\u00E1tico, l\u00F3gico, criptoanalista e cientista da computa\u00E7\u00E3o brit\u00E2nico. Foi influente no desenvolvimento da ci\u00EAncia da computa\u00E7\u00E3o e na formaliza\u00E7\u00E3o do conceito de algoritmo e computa\u00E7\u00E3o com a m\u00E1quina de Turing, desempenhando um papel importante na cria\u00E7\u00E3o do computador moderno. Ele tamb\u00E9m \u00E9 pioneiro na intelig\u00EAncia artificial e na ci\u00EAncia da computa\u00E7\u00E3o."@pt ,
+		"Alan Mathison Turing (ur. 23 czerwca 1912 w Londynie, zm. 7 czerwca 1954 w Wilmslow) \u2013 angielski matematyk, kryptolog, tw\u00F3rca poj\u0119cia maszyny Turinga i jeden z tw\u00F3rc\u00F3w informatyki."@pl ,
+		"Alan Mathison Turing OBE FRS (/\u02C8tj\u028A\u0259r\u026A\u014B/; 23 June 1912 \u2013 7 June 1954) was a pioneering British computer scientist, mathematician, logician, cryptanalyst and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence."@en ,
+		"Alan Mathison Turing, OBE (Paddington, Londres, 23 de junio de 1912-Wilmslow, Cheshire, 7 de junio de 1954), fue un matem\u00E1tico, l\u00F3gico, cient\u00EDfico de la computaci\u00F3n, cript\u00F3grafo, fil\u00F3sofo, maratoniano y corredor de ultra distancia brit\u00E1nico.Es considerado uno de los padres de la ciencia de la computaci\u00F3n y precursor de la inform\u00E1tica moderna. Proporcion\u00F3 una influyente formalizaci\u00F3n de los conceptos de algoritmo y computaci\u00F3n: la m\u00E1quina de Turing. Formul\u00F3 su propia versi\u00F3n de la hoy ampliamente aceptada tesis de Church-Turing."@es ,
+		"\u0622\u0644\u0627\u0646 \u0645\u0627\u062B\u064A\u0633\u0648\u0646 \u062A\u0648\u0631\u064A\u0646\u062C (23 \u062D\u0632\u064A\u0631\u0627\u0646 1912 - 7 \u062D\u0632\u064A\u0631\u0627\u0646 1954) (\u0628\u0627\u0644\u0625\u0646\u062C\u0644\u064A\u0632\u064A\u0629: Alan Mathison Turing) \u0643\u0627\u0646 \u0639\u0627\u0644\u0645 \u062D\u0627\u0633\u0648\u0628 \u0628\u0631\u064A\u0637\u0627\u0646\u064A \u0631\u0627\u0626\u062F\u060C \u0648\u0631\u064A\u0627\u0636\u064A\u0627\u062A\u064A\u060C \u0648\u0639\u0627\u0644\u0645 \u0645\u0646\u0637\u0642\u060C \u0648\u0639\u0627\u0644\u0645 \u062A\u062D\u0644\u064A\u0644 \u0627\u0644\u0634\u0641\u0631\u0627\u062A\u060C \u0648\u0639\u0627\u0644\u0645 \u0628\u064A\u0648\u0644\u0648\u062C\u064A\u0627 \u0646\u0638\u0631\u064A\u0629. \u0643\u0627\u0646 \u0644\u0647 \u062A\u0623\u062B\u064A\u0631 \u0639\u0638\u064A\u0645 \u0641\u064A \u062A\u0637\u0648\u0651\u0631 \u0639\u0644\u0648\u0645 \u0627\u0644\u062D\u0633\u0648\u0628 \u0627\u0644\u0646\u0638\u0631\u064A\u0629\u060C \u062D\u064A\u062B \u0623\u0636\u0641\u0649 \u0627\u0644\u0637\u0627\u0628\u0639 \u0627\u0644\u0631\u0633\u0645\u064A \u0644\u0645\u0641\u0627\u0647\u064A\u0645 \u0627\u0644\u062E\u0648\u0627\u0631\u0632\u0645\u064A\u0629 \u0648\u0627\u0644\u062D\u0648\u0633\u0628\u0629 \u0628\u0648\u0627\u0633\u0637\u0629 \u0622\u0644\u0629 \u062A\u0648\u0631\u064A\u0646\u062C\u060C \u0648\u0627\u0644\u062A\u064A \u064A\u0645\u0643\u0646 \u0623\u0646 \u062A\u064F\u0639\u062A\u0628\u0631 \u0646\u0645\u0648\u0630\u062C\u064B\u0627 \u0644\u062D\u0627\u0633\u0648\u0628 \u0644\u0623\u063A\u0631\u0627\u0636 \u0639\u0627\u0645\u0629."@ar ,
+		"Alan Mathison Turing (Londen, 23 juni 1912 \u2013 Wilmslow, 7 juni 1954) was een Britse wiskundige, computerpionier en informaticus, mathematisch bioloog en logicus."@nl ,
+		"\u30A2\u30E9\u30F3\u30FB\u30DE\u30B7\u30B9\u30F3\u30FB\u30C1\u30E5\u30FC\u30EA\u30F3\u30B0\uFF08Alan Mathison Turing, 1912\u5E746\u670823\u65E5 - 1954\u5E746\u67087\u65E5\uFF09\u306F\u30A4\u30AE\u30EA\u30B9\u306E\u6570\u5B66\u8005\u3001\u8AD6\u7406\u5B66\u8005\u3001\u6697\u53F7\u89E3\u8AAD\u8005\u3001\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u79D1\u5B66\u8005\u3002"@ja ;
+	dbo:award	dbr:Royal_Society ,
+		dbr:Order_of_the_British_Empire ,
+		<http://dbpedia.org/resource/Smith\u0027s_Prize> ;
+	dbo:doctoralAdvisor	dbr:Alonzo_Church ;
+	dbo:doctoralStudent	dbr:Robin_Gandy ;
+	dbo:field	dbr:Mathematics ,
+		dbr:Cryptanalysis ,
+		dbr:Mathematical_and_theoretical_biology ,
+		dbr:Computer_science ,
+		dbr:Logic ;
+	dbo:deathPlace	dbr:Wilmslow ;
+	dbp:deathPlace	"Wilmslow, Cheshire, England"@en ;
+	dbp:almaMater	"*"@en ,
+		dbr:Princeton_University ,
+		<http://dbpedia.org/resource/King\u0027s_College,_Cambridge> ,
+		dbr:Sherborne_School ;
+	dbp:doctoralAdvisor	dbr:Alonzo_Church ;
+	dbp:doctoralStudents	dbr:Robin_Gandy ;
+	dbp:nationality	"British"@en ;
+	owl:sameAs	<http://viaf.org/viaf/41887917> .
+@prefix dbpedia-wikidata:	<http://wikidata.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-wikidata:Q7251 .
+@prefix dbpedia-fr:	<http://fr.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-fr:Alan_Turing ,
+		<http://rdf.freebase.com/ns/m.0n00> .
+@prefix dbpedia-el:	<http://el.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-el:Άλαν_Τούρινγκ .
+@prefix dbpedia-es:	<http://es.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-es:Alan_Turing .
+@prefix dbpedia-eu:	<http://eu.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-eu:Alan_Turing .
+@prefix dbpedia-ko:	<http://ko.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-ko:앨런_튜링 .
+@prefix dbpedia-it:	<http://it.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-it:Alan_Turing .
+@prefix dbpedia-de:	<http://de.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-de:Alan_Turing .
+@prefix ns21:	<http://sw.cyc.com/concept/> .
+dbr:Alan_Turing	owl:sameAs	ns21:Mx4rv_DXKpwpEbGdrcN5Y29ycA .
+@prefix dbpedia-pt:	<http://pt.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-pt:Alan_Turing .
+@prefix dbpedia-nl:	<http://nl.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-nl:Alan_Turing .
+@prefix dbpedia-id:	<http://id.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-id:Alan_Turing .
+@prefix dbpedia-pl:	<http://pl.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-pl:Alan_Turing .
+@prefix yago-res:	<http://yago-knowledge.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	yago-res:Alan_Turing .
+@prefix dbpedia-cs:	<http://cs.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-cs:Alan_Turing ,
+		wikidata:Q7251 ,
+		dbr:Alan_Turing .
+@prefix dbpedia-ja:	<http://ja.dbpedia.org/resource/> .
+dbr:Alan_Turing	owl:sameAs	dbpedia-ja:アラン・チューリング .
+@prefix ns29:	<http://data.europa.eu/euodp/jrc-names/> .
+dbr:Alan_Turing	owl:sameAs	ns29:Alan_Turing .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+dbr:Alan_Turing	prov:wasDerivedFrom	<http://en.wikipedia.org/wiki/Alan_Turing?oldid=708274644> ;
+	foaf:name	"Alan Turing"@en ;
+	foaf:homepage	<http://turingfilm.com/> ;
+	foaf:depiction	<http://commons.wikimedia.org/wiki/Special:FilePath/Alan_Turing_Aged_16.jpg> ;
+	foaf:isPrimaryTopicOf	wikipedia-en:Alan_Turing .
+@prefix dct:	<http://purl.org/dc/terms/> .
+dbr:Alan_Turing	dct:subject	<http://dbpedia.org/resource/Category:1954_deaths> .
+@prefix dbc:	<http://dbpedia.org/resource/Category:> .
+dbr:Alan_Turing	dct:subject	dbc:English_people_of_Scottish_descent ,
+		dbc:History_of_artificial_intelligence ,
+		dbc:People_associated_with_Bletchley_Park ,
+		dbc:English_inventors ,
+		dbc:English_mathematicians ,
+		dbc:Academics_of_the_University_of_Manchester_Institute_of_Science_and_Technology ,
+		dbc:People_who_have_received_posthumous_pardons ,
+		dbc:Programmers_who_committed_suicide ,
+		dbc:People_from_Maida_Vale ,
+		dbc:People_prosecuted_under_anti-homosexuality_laws ,
+		dbc:Suicides_in_England ,
+		dbc:Recipients_of_British_royal_pardons ,
+		dbc:Suicides_by_cyanide_poisoning ,
+		dbc:Gay_men ,
+		dbc:Government_Communications_Headquarters_people ,
+		dbc:English_logicians ,
+		dbc:English_long-distance_runners ,
+		dbc:LGBT_scientists_from_the_United_Kingdom ,
+		dbc:Mathematicians_who_committed_suicide ,
+		dbc:Inventors_who_committed_suicide ,
+		dbc:LGBT_scientists ,
+		dbc:Atheist_philosophers ,
+		dbc:British_cryptographers ,
+		dbc:Alan_Turing ,
+		<http://dbpedia.org/resource/Category:Alumni_of_King\u0027s_College,_Cambridge> ,
+		dbc:Computer_designers ,
+		dbc:Deaths_in_Cheshire ,
+		dbc:British_people_of_World_War_II ,
+		dbc:Computability_theorists ,
+		<http://dbpedia.org/resource/Category:20th-century_philosophers> ,
+		dbc:Philosophers_who_committed_suicide ,
+		dbc:British_logicians ,
+		dbc:Fellows_of_the_Royal_Society ,
+		dbc:Bayesian_statisticians ,
+		dbc:Princeton_University_alumni ,
+		dbc:Officers_of_the_Order_of_the_British_Empire ,
+		dbc:Philosophers_of_mind ,
+		dbc:People_educated_at_Sherborne_School ,
+		dbc:Male_long-distance_runners ,
+		dbc:British_long-distance_runners ,
+		<http://dbpedia.org/resource/Category:School_of_Computer_Science,_University_of_Manchester> ,
+		dbc:English_atheists ,
+		dbc:British_male_athletes ,
+		<http://dbpedia.org/resource/Category:1912_births> ,
+		dbc:English_computer_scientists ,
+		dbc:Artificial_intelligence_researchers ,
+		dbc:People_from_Wilmslow ,
+		dbc:English_philosophers ,
+		<http://dbpedia.org/resource/Category:20th-century_mathematicians> ,
+		dbc:Theoretical_computer_scientists ;
+	dbo:thumbnail	<http://commons.wikimedia.org/wiki/Special:FilePath/Alan_Turing_Aged_16.jpg?width=300> ;
+	dbo:residence	dbr:Wilmslow ;
+	dbp:residence	"Wilmslow, Cheshire, England"@en .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+dbr:Alan_Turing	dbo:deathDate	"1954-06-07"^^xsd:date ;
+	dbp:deathDate	"1954-06-07"^^xsd:date ;
+	dbp:knownFor	"*"@en ,
+		dbr:LU_decomposition ,
+		dbr:Cryptanalysis_of_the_Enigma ,
+		dbr:Turing_machine ,
+		dbr:Turing_test .
+@prefix ns34:	<http://www.w3.org/2006/03/wn/wn20/instances/> .
+dbr:Alan_Turing	dbp:wordnet_type	ns34:synset-scientist-noun-1 ;
+	dbo:abstract	"Alan Mathison Turing, n\u00E9 le et mort le , est un math\u00E9maticien, cryptologue et informaticien britannique. Il est l'auteur d'un article de logique math\u00E9matique, paru en 1936 et devenu plus tard un des fondements scientifiques de l'informatique. Pour r\u00E9soudre le probl\u00E8me fondamental de la d\u00E9cidabilit\u00E9 en arithm\u00E9tique, il y pr\u00E9sente une exp\u00E9rience de pens\u00E9e que l'on nommera ensuite machine de Turing et des concepts de programmation et de programme, qui prendront tout leur sens avec la diffusion des ordinateurs, dans la seconde moiti\u00E9 du XXe si\u00E8cle. Avec d'autres logiciens (Church, Kleene, etc.), Turing est \u00E0 l'origine de la formalisation des concepts d'algorithme et de calculabilit\u00E9, qui fonderont cette discipline. Son mod\u00E8le a contribu\u00E9 \u00E0 \u00E9tablir d\u00E9finitivement la th\u00E8se Church-Turing, qui donne une d\u00E9finition math\u00E9matique au concept intuitif de fonction calculable. Durant la Seconde Guerre mondiale, il joue un r\u00F4le majeur dans les recherches sur les cryptographies g\u00E9n\u00E9r\u00E9es par la machine Enigma, utilis\u00E9e par les arm\u00E9es allemandes. Ses m\u00E9thodes permirent de casser ce code et, selon plusieurs historiens, de raccourcir la capacit\u00E9 de r\u00E9sistance du r\u00E9gime nazi de deux ans. Apr\u00E8s la guerre, il travaille sur un des tout premiers ordinateurs, puis contribue de mani\u00E8re provocatrice au d\u00E9bat d\u00E9j\u00E0 houleux \u00E0 cette p\u00E9riode sur la capacit\u00E9 des machines \u00E0 penser, en \u00E9tablissant le test de Turing. Vers la fin de sa vie, il s'int\u00E9resse \u00E0 des mod\u00E8les de morphogen\u00E8se du vivant conduisant aux \u00AB structures de Turing \u00BB. En 1952, un fait divers li\u00E9 \u00E0 son homosexualit\u00E9 lui vaut des poursuites judiciaires. Pour \u00E9viter la prison, il choisit la castration chimique par prise d'\u0153strog\u00E8nes. Suicide ou accident, Turing est retrouv\u00E9 mort dans la chambre de sa maison \u00E0 Manchester, par empoisonnement au cyanure, le 7 juin 1954. La reine \u00C9lisabeth II le gracie \u00E0 titre posthume en 2013."@fr ,
+		"Alan Mathison Turing OBE, FRS [\u02C8\u00E6l\u0259n \u02C8m\u00E6\u03B8\u026As\u0259n \u02C8tj\u028A\u0259\u0279\u026A\u014B] (* 23. Juni 1912 in London; \u2020 7. Juni 1954 in Wilmslow, Cheshire) war ein britischer Logiker, Mathematiker, Kryptoanalytiker und Informatiker. Er gilt heute als einer der einflussreichsten Theoretiker der fr\u00FChen Computerentwicklung und Informatik. Turing schuf einen gro\u00DFen Teil der theoretischen Grundlagen f\u00FCr die moderne Informations- und Computertechnologie. Als richtungsweisend erwiesen sich auch seine Beitr\u00E4ge zur theoretischen Biologie. Das von ihm entwickelte Berechenbarkeitsmodell der Turingmaschine bildet eines der Fundamente der theoretischen Informatik. W\u00E4hrend des Zweiten Weltkrieges war er ma\u00DFgeblich an der Entzifferung der mit der Enigma verschl\u00FCsselten deutschen Funkspr\u00FCche beteiligt. Der Gro\u00DFteil seiner Arbeiten blieb auch nach Kriegsende unter Verschluss. Turing entwickelte 1953 eines der ersten Schachprogramme, dessen Berechnungen er mangels Hardware selbst durchf\u00FChrte. Nach ihm benannt sind der Turing Award, die bedeutendste Auszeichnung in der Informatik, sowie der Turing-Test zum \u00DCberpr\u00FCfen des Vorhandenseins von k\u00FCnstlicher Intelligenz. Im M\u00E4rz 1952 wurde Turing wegen seiner Homosexualit\u00E4t, die damals noch als Straftat verfolgt wurde, zur chemischen Kastration verurteilt. Turing erkrankte in Folge der Hormonbehandlung an einer Depression und beging etwa zwei Jahre sp\u00E4ter Suizid. Im Jahr 2009 sprach der damalige britische Premierminister Gordon Brown eine offizielle Entschuldigung im Namen der Regierung f\u00FCr die \u201Eentsetzliche Behandlung\u201C Turings aus und w\u00FCrdigte dessen \u201Eau\u00DFerordentliche Verdienste\u201C w\u00E4hrend des Krieges; eine Begnadigung wurde aber auch 2011 noch trotz einer Petition abgelehnt. Zum 24. Dezember 2013 sprach K\u00F6nigin Elisabeth II. posthum ein \u201ERoyal Pardon\u201C (K\u00F6nigliche Begnadigung) aus."@de ,
+		"Alan Mathison Turing (ur. 23 czerwca 1912 w Londynie, zm. 7 czerwca 1954 w Wilmslow) \u2013 angielski matematyk, kryptolog, tw\u00F3rca poj\u0119cia maszyny Turinga i jeden z tw\u00F3rc\u00F3w informatyki."@pl ,
+		"Alan Mathison Turing (23 de junho de 1912 \u2014 7 de junho de 1954) foi um matem\u00E1tico, l\u00F3gico, criptoanalista e cientista da computa\u00E7\u00E3o brit\u00E2nico. Foi influente no desenvolvimento da ci\u00EAncia da computa\u00E7\u00E3o e na formaliza\u00E7\u00E3o do conceito de algoritmo e computa\u00E7\u00E3o com a m\u00E1quina de Turing, desempenhando um papel importante na cria\u00E7\u00E3o do computador moderno. Ele tamb\u00E9m \u00E9 pioneiro na intelig\u00EAncia artificial e na ci\u00EAncia da computa\u00E7\u00E3o. Durante a Segunda Guerra Mundial, Turing trabalhou para a intelig\u00EAncia brit\u00E2nica em Bletchley Park, num centro especializado em quebra de c\u00F3digos. Por um tempo ele foi chefe do Hut 8, a se\u00E7\u00E3o respons\u00E1vel pela criptoan\u00E1lise da frota naval alem\u00E3. Planejou uma s\u00E9rie de t\u00E9cnicas para quebrar os c\u00F3digos alem\u00E3es, incluindo o m\u00E9todo da bomba eletromec\u00E2nica, uma m\u00E1quina eletromec\u00E2nica que poderia encontrar defini\u00E7\u00F5es para a m\u00E1quina Enigma. Ap\u00F3s a guerra, trabalhou no Laborat\u00F3rio Nacional de F\u00EDsica do Reino Unido, onde criou um dos primeiros projetos para um computador com um programa armazenado, o ACE. Posteriormente, Turing se interessou pela qu\u00EDmica. Escreveu um artigo sobre a base qu\u00EDmica da morfog\u00EAnese e previu rea\u00E7\u00F5es qu\u00EDmicas oscilantes como a Rea\u00E7\u00E3o de Belousov-Zhabotinsky, que foram observadas pela primeira vez na d\u00E9cada de 1960. A homossexualidade de Turing resultou em um processo criminal em 1952, pois atos homossexuais eram ilegais no Reino Unido na \u00E9poca, e ele aceitou o tratamento com horm\u00F4nios femininos e castra\u00E7\u00E3o qu\u00EDmica, como alternativa \u00E0 pris\u00E3o. Morreu em 1954, algumas semanas antes de seu anivers\u00E1rio de 42 anos, devido a um aparente autoadministrado envenenamento por cianeto, apesar de sua m\u00E3e (e alguns outros) terem considerado sua morte acidental. Em 10 de setembro de 2009, ap\u00F3s uma campanha de internet, o primeiro-ministro brit\u00E2nico Gordon Brown fez um pedido oficial de desculpas p\u00FAblico, em nome do governo brit\u00E2nico, devido \u00E0 maneira pela qual Turing foi tratado ap\u00F3s a guerra. Em 24 de dezembro de 2013, Alan Turing recebeu o perd\u00E3o real da rainha Elizabeth II, da condena\u00E7\u00E3o por homossexualidade."@pt ,
+		"\u30A2\u30E9\u30F3\u30FB\u30DE\u30B7\u30B9\u30F3\u30FB\u30C1\u30E5\u30FC\u30EA\u30F3\u30B0\uFF08Alan Mathison Turing, 1912\u5E746\u670823\u65E5 - 1954\u5E746\u67087\u65E5\uFF09\u306F\u30A4\u30AE\u30EA\u30B9\u306E\u6570\u5B66\u8005\u3001\u8AD6\u7406\u5B66\u8005\u3001\u6697\u53F7\u89E3\u8AAD\u8005\u3001\u30B3\u30F3\u30D4\u30E5\u30FC\u30BF\u79D1\u5B66\u8005\u3002"@ja ,
+		"Il suo lavoro ebbe vasta influenza sullo sviluppo dell'informatica, grazie alla sua formalizzazione dei concetti di algoritmo e calcolo mediante la macchina di Turing, che a sua volta ha svolto un ruolo significativo nella creazione del moderno computer. Per questi contributi Turing \u00E8 solitamente considerato il padre della scienza informatica e dell'intelligenza artificiale, da lui teorizzate gi\u00E0 negli anni trenta (quando non era ancora stato creato il primo vero computer). Fu anche uno dei pi\u00F9 brillanti crittoanalisti che operavano in Inghilterra, durante la seconda guerra mondiale, per decifrare i messaggi scambiati da diplomatici e militari delle Potenze dell'Asse. Turing lavor\u00F2 infatti a Bletchley Park, il principale centro di crittoanalisi del Regno Unito, dove ide\u00F2 una serie di tecniche per violare i cifrari tedeschi, incluso il metodo della Bomba, una macchina elettromeccanica in grado di decodificare codici creati mediante la macchina Enigma. Mor\u00EC suicida a soli 41 anni, in seguito alle persecuzioni subite da parte delle autorit\u00E0 britanniche a causa della sua omosessualit\u00E0."@it ,
+		"\u0622\u0644\u0627\u0646 \u0645\u0627\u062B\u064A\u0633\u0648\u0646 \u062A\u0648\u0631\u064A\u0646\u062C (23 \u062D\u0632\u064A\u0631\u0627\u0646 1912 - 7 \u062D\u0632\u064A\u0631\u0627\u0646 1954) (\u0628\u0627\u0644\u0625\u0646\u062C\u0644\u064A\u0632\u064A\u0629: Alan Mathison Turing) \u0643\u0627\u0646 \u0639\u0627\u0644\u0645 \u062D\u0627\u0633\u0648\u0628 \u0628\u0631\u064A\u0637\u0627\u0646\u064A \u0631\u0627\u0626\u062F\u060C \u0648\u0631\u064A\u0627\u0636\u064A\u0627\u062A\u064A\u060C \u0648\u0639\u0627\u0644\u0645 \u0645\u0646\u0637\u0642\u060C \u0648\u0639\u0627\u0644\u0645 \u062A\u062D\u0644\u064A\u0644 \u0627\u0644\u0634\u0641\u0631\u0627\u062A\u060C \u0648\u0639\u0627\u0644\u0645 \u0628\u064A\u0648\u0644\u0648\u062C\u064A\u0627 \u0646\u0638\u0631\u064A\u0629. \u0643\u0627\u0646 \u0644\u0647 \u062A\u0623\u062B\u064A\u0631 \u0639\u0638\u064A\u0645 \u0641\u064A \u062A\u0637\u0648\u0651\u0631 \u0639\u0644\u0648\u0645 \u0627\u0644\u062D\u0633\u0648\u0628 \u0627\u0644\u0646\u0638\u0631\u064A\u0629\u060C \u062D\u064A\u062B \u0623\u0636\u0641\u0649 \u0627\u0644\u0637\u0627\u0628\u0639 \u0627\u0644\u0631\u0633\u0645\u064A \u0644\u0645\u0641\u0627\u0647\u064A\u0645 \u0627\u0644\u062E\u0648\u0627\u0631\u0632\u0645\u064A\u0629 \u0648\u0627\u0644\u062D\u0648\u0633\u0628\u0629 \u0628\u0648\u0627\u0633\u0637\u0629 \u0622\u0644\u0629 \u062A\u0648\u0631\u064A\u0646\u062C\u060C \u0648\u0627\u0644\u062A\u064A \u064A\u0645\u0643\u0646 \u0623\u0646 \u062A\u064F\u0639\u062A\u0628\u0631 \u0646\u0645\u0648\u0630\u062C\u064B\u0627 \u0644\u062D\u0627\u0633\u0648\u0628 \u0644\u0623\u063A\u0631\u0627\u0636 \u0639\u0627\u0645\u0629. \u064A\u064F\u0639\u062A\u0628\u0631 \u062A\u0648\u0631\u064A\u0646\u062C \u0639\u0644\u0649 \u0646\u0637\u0627\u0642 \u0648\u0627\u0633\u0639 \u0623\u0628\u064A \u0639\u0644\u0648\u0645 \u0627\u0644\u062D\u0633\u0648\u0628 \u0627\u0644\u0646\u0638\u0631\u064A\u0629 \u0648\u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0627\u0635\u0637\u0646\u0627\u0639\u064A.\u062E\u0644\u0627\u0644 \u0627\u0644\u062D\u0631\u0628 \u0627\u0644\u0639\u0627\u0644\u0645\u064A\u0629 \u0627\u0644\u062B\u0627\u0646\u064A\u0629\u060C \u0639\u0645\u0644 \u062A\u0648\u0631\u064A\u0646\u062C \u0641\u064A \u0645\u062F\u0631\u0633\u0629 \u0627\u0644\u0643\u0648\u062F \u0648\u0627\u0644\u0634\u0641\u0631\u0629 \u0627\u0644\u062D\u0643\u0648\u0645\u064A\u0629 (GC & CS) \u0641\u064A \u062D\u062F\u064A\u0642\u0629 \u0628\u0644\u062A\u0634\u0644\u064A\u060C \u0645\u0631\u0643\u0632 \u0641\u0643 \u0627\u0644\u0634\u0641\u0631\u0629 \u0627\u0644\u0628\u0631\u064A\u0637\u0627\u0646\u064A. \u0644\u0641\u062A\u0631\u0629 \u0637\u0648\u064A\u0644\u0629 \u0642\u0627\u062F \u0643\u0648\u062E 8 (\u0647\u0627\u062A 8)\u060C \u0627\u0644\u0642\u0633\u0645 \u0627\u0644\u0645\u0633\u0624\u0648\u0644 \u0639\u0646 \u062A\u062D\u0644\u064A\u0644 \u0634\u0641\u0631\u0627\u062A \u0627\u0644\u0628\u062D\u0631\u064A\u0629 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064A\u0629. \u0648\u0627\u0628\u062A\u0643\u0631 \u0639\u062F\u0629 \u062A\u0642\u0646\u064A\u0627\u062A \u0644\u0641\u0643 \u0627\u0644\u0634\u0641\u0631\u0627\u062A \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064A\u0629\u060C \u0628\u0645\u0627 \u0641\u064A \u0630\u0644\u0643 \u0625\u062F\u062E\u0627\u0644 \u062A\u062D\u0633\u064A\u0646\u0627\u062A \u0639\u0644\u0649 \u0637\u0631\u064A\u0642\u0629 \u0627\u0644\u0628\u0648\u0645\u0628\u0627 \u0627\u0644\u0628\u0648\u0644\u0646\u062F\u064A\u0629 \u0645\u0646 \u0642\u0628\u0644 \u0627\u0644\u062D\u0631\u0628 \u0648\u0622\u0644\u0629 \u0643\u0647\u0631\u0648\u0645\u064A\u0643\u0627\u0646\u064A\u0643\u064A\u0629 \u0627\u0644\u062A\u064A \u064A\u0645\u0643\u0646\u0647\u0627 \u0627\u0644\u0639\u062B\u0648\u0631 \u0639\u0644\u0649 \u0625\u0639\u062F\u0627\u062F\u0627\u062A \u0622\u0644\u0629 \u0627\u0644\u0625\u0646\u062C\u0645\u0627. \u0644\u0639\u0628 \u062A\u0648\u0631\u064A\u0646\u062C \u062F\u0648\u0631\u064B\u0627 \u0645\u062D\u0648\u0631\u064A\u064B\u0627 \u0641\u064A \u0641\u0643 \u0627\u0644\u0631\u0633\u0627\u0626\u0644 \u0627\u0644\u0645\u0634\u0641\u0631\u0629 \u0627\u0644\u0645\u064F\u0639\u062A\u0631\u0636\u0629 \u0627\u0644\u0623\u0645\u0631 \u0627\u0644\u0630\u064A \u0645\u0643\u0651\u0646 \u0627\u0644\u062D\u0644\u0641\u0627\u0621 \u0647\u0632\u064A\u0645\u0629 \u0627\u0644\u0646\u0627\u0632\u064A\u064A\u0646 \u0641\u064A \u0627\u0644\u0639\u062F\u064A\u062F \u0645\u0646 \u0627\u0644\u0627\u0634\u062A\u0628\u0627\u0643\u0627\u062A \u0627\u0644\u062D\u0627\u0633\u0645\u0629\u060C \u0628\u0645\u0627 \u0641\u064A \u0630\u0644\u0643 \u0645\u0639\u0631\u0643\u0629 \u0627\u0644\u0623\u0637\u0644\u0633\u064A\u061B \u0648\u062A\u0634\u064A\u0631 \u0627\u0644\u062A\u0642\u062F\u064A\u0631\u0627\u062A \u0623\u0646 \u0639\u0645\u0644\u0647 \u0647\u0630\u0627 \u0642\u0635\u0651\u0631 \u0645\u062F\u0629 \u0627\u0644\u062D\u0631\u0628 \u0641\u064A \u0623\u0648\u0631\u0648\u0628\u0627 \u0628\u0645\u0627 \u0644\u0627 \u064A\u0642\u0644 \u0639\u0646 2-4 \u0633\u0646\u0648\u0627\u062A.\u0628\u0639\u062F \u0627\u0644\u062D\u0631\u0628\u060C \u0639\u0645\u0644 \u062A\u0648\u0631\u064A\u0646\u062C \u0641\u064A \u0645\u062E\u062A\u0628\u0631 \u0627\u0644\u0641\u064A\u0632\u064A\u0627\u0621 \u0627\u0644\u0648\u0637\u0646\u064A\u060C \u062D\u064A\u062B \u0642\u0627\u0645 \u0628\u062A\u0635\u0645\u064A\u0645 \u0645\u062D\u0631\u0651\u0643 \u0627\u0644\u062D\u0627\u0633\u0628\u0627\u062A \u0627\u0644\u0622\u0644\u064A\u060C \u0628\u064A\u0646 \u0627\u0644\u062A\u0635\u0627\u0645\u064A\u0645 \u0627\u0644\u0623\u0648\u0644\u0649 \u0644\u062D\u0627\u0633\u0648\u0628 \u0627\u0644\u0628\u0631\u0646\u0627\u0645\u062C \u0627\u0644\u0645\u062E\u0632\u0651\u0646. \u0627\u0646\u0636\u0645 \u062A\u0648\u0631\u064A\u0646\u062C \u0641\u064A \u0639\u0627\u0645 1948 \u0625\u0644\u0649 \u0645\u062E\u062A\u0628\u0631 \u0645\u0627\u0643\u0633 \u0646\u064A\u0648\u0645\u0627\u0646 \u0644\u0644\u062D\u0648\u0633\u0628\u0629 \u0641\u064A \u062C\u0627\u0645\u0639\u0629 \u0645\u0627\u0646\u0634\u0633\u062A\u0631\u060C \u062D\u064A\u062B \u0633\u0627\u0639\u062F \u0641\u064A \u062A\u0637\u0648\u0631\u0629 \u062D\u0648\u0627\u0633\u064A\u0628 \u0645\u0627\u0646\u0634\u0633\u062A\u0631 \u0648\u0623\u0635\u0628\u062D \u0645\u0647\u062A\u0645\u064B\u0651\u0627 \u0641\u064A \u0639\u0644\u0645 \u0627\u0644\u0623\u062D\u064A\u0627\u0621 \u0627\u0644\u0631\u064A\u0627\u0636\u064A. \u0643\u062A\u0628 \u0645\u0642\u0627\u0644\u0629 \u0639\u0646 \u0627\u0644\u0623\u0633\u0627\u0633 \u0627\u0644\u0643\u064A\u0645\u064A\u0627\u0626\u064A \u0644\u0644\u062A\u0634\u0643\u0651\u0644 \u0627\u0644\u062D\u064A\u0648\u064A\u060C \u0648\u062A\u0648\u0642\u0651\u0639 \u062A\u0641\u0627\u0639\u0644\u0627\u062A \u0643\u064A\u0645\u064A\u0627\u0626\u064A\u0629 \u0645\u062A\u0630\u0628\u0630\u0628\u0629 \u0645\u062B\u0644 \u062A\u0641\u0627\u0639\u0644 \u0628\u064A\u0644\u0624\u0648\u0633\u0648\u0641-\u062C\u0627\u0628\u0648\u062A\u064A\u0646\u0633\u0643\u064A\u060C \u0648\u0627\u0644\u062A\u064A \u0644\u0648\u062D\u0638\u062A \u0644\u0644\u0645\u0631\u0629 \u0627\u0644\u0623\u0648\u0644\u0649 \u0641\u064A \u0627\u0644\u0633\u062A\u064A\u0646\u0627\u062A \u0645\u0646 \u0627\u0644\u0642\u0631\u0646 \u0627\u0644\u0639\u0634\u0631\u064A\u0646.\u0646\u0634\u0631 \u0641\u064A \u0639\u0627\u0645 1936 \u062D\u0644\u0642\u0629 \u0628\u062D\u062B \"on computable numbers\" \u0627\u0644\u062A\u064A \u062A\u062E\u064A\u0644 \u0641\u064A\u0647\u0627 \u0646\u0645\u0648\u0630\u062C \u062C\u062F\u064A\u0631 \u0628\u0627\u0644\u0645\u0644\u0627\u062D\u0638\u0629 \u0648\u0644\u0643\u0646 \u0627\u0644\u0645\u0644\u062E\u0635 \u0627\u0644\u062C\u0628\u0627\u0631 \u0635\u0646\u0639 \u0645\u0646 \u0623\u062C\u0644 \u0639\u0631\u0636 \u0627\u0644\u0639\u0645\u0644\u064A\u0627\u062A \u0627\u0644\u062D\u0633\u0627\u0628\u064A\u0629 \u0627\u0644\u0645\u0645\u0643\u0646\u0629.\u0648 \u064A\u062F\u0639\u0649 \u0647\u0630\u0627 \u0627\u0644\u062C\u0647\u0627\u0632 \u0627\u0644\u0622\u0646 \u0622\u0644\u0629 \u062A\u0648\u0631\u0646\u063A \u0648\u0627\u0644\u0630\u064A \u064A\u062A\u0623\u0644\u0641 \u0645\u0646 \u0634\u0631\u0627\u0626\u0637 \u062A\u062E\u0632\u064A\u0646 \u063A\u064A\u0631 \u0645\u062D\u062F\u0648\u062F\u0629 \u0648\u0631\u0623\u0633 \u0642\u0631\u0627\u0621\u0629- \u0643\u062A\u0627\u0628\u0629 \u064A\u062A\u0645 \u0627\u0644\u062A\u062D\u0643\u0645 \u0628\u0647 \u0639\u0646 \u0637\u0631\u064A\u0642 \u0645\u062C\u0645\u0648\u0639\u0629 \u0645\u062D\u062F\u0648\u062F\u0629 \u0645\u0646 \u0627\u0644\u0642\u0648\u0627\u0639\u062F \u0627\u0644\u062A\u064A \u062A\u0633\u062A\u0646\u062F \u0625\u0644\u0649 \u0627\u0644\u062D\u0627\u0644\u0629 \u0627\u0644\u062F\u0627\u062E\u0644\u064A\u0629 \u0627\u0644\u062D\u0627\u0644\u064A\u0629 \u0644\u0644\u062A\u062D\u0643\u0645 \u0648\u0627\u0644\u0642\u064A\u0645\u0629 \u0644\u062E\u0644\u064A\u0629 \u0627\u0644\u0634\u0631\u064A\u0637 \u0627\u0644\u062D\u0627\u0644\u064A\u0629 \u0648\u062A\u0623\u062A\u064A \u0623\u0647\u0645\u064A\u0629 \u0647\u0630\u0627 \u0627\u0644\u0646\u0645\u0648\u0630\u062C \u0641\u064A \u0628\u0633\u0627\u0637\u062A\u0647 \u0645\u0642\u0627\u0631\u0646\u0629 \u0628\u062C\u0647\u0627\u0632 \u0627\u0644\u062D\u0627\u0633\u0648\u0628 \u0627\u0644\u0645\u0639\u0642\u062F \u0648\u0628\u0627\u0644\u0631\u063A\u0645 \u0645\u0646 \u0630\u0644\u0643 \u0641\u0647\u0648 \u0642\u0627\u062F\u0631 \u0639\u0644\u0649 \u062A\u0646\u0641\u064A\u0630 \u0643\u0644 \u062E\u0648\u0627\u0631\u0632\u0645\u064A\u0629 \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062A\u0646\u0641\u064A\u0630 \u0628\u0648\u0627\u0633\u0637\u0629 \u0623\u064A \u062D\u0627\u0633\u0648\u0628 \u0645\u062A\u0637\u0648\u0631 \u0644\u0630\u0644\u0643 \u064A\u0645\u0643\u0646 \u0645\u0639\u0631\u0641\u0629 \u0641\u064A\u0645\u0627\u0625\u0630\u0627 \u0643\u0627\u0646\u062A \u0639\u0645\u0644\u064A\u0629 \u0645\u0639\u064A\u0646\u0629 \u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062A\u0646\u0641\u064A\u0630 \u0628\u0648\u0627\u0633\u0637\u0629 \u0627\u0644\u062D\u0627\u0633\u0648\u0628 \u0623\u0645 \u0644\u0627 \u0639\u0646 \u0637\u0631\u064A\u0642 \u0641\u062D\u0635\u0647\u0627 \u0628\u0648\u0627\u0633\u0637\u0629 \u0622\u0644\u0629 \u062A\u0648\u0631\u064A\u0646\u063A \u0648\u0647\u0630\u0627 \u0645\u0627 \u064A\u0639\u0631\u0641 \u0628\u0627\u0633\u0645 \u0642\u0627\u0628\u0644\u064A\u0629 \u0627\u0644\u062D\u0633\u0627\u0628.\u0628\u0639\u062F \u0627\u0644\u062A\u062E\u0631\u062C \u062F\u0631\u0633 \u0622\u0644\u0627\u0646 \u062A\u0648\u0631\u0646\u063A \u0641\u064A \u062C\u0627\u0645\u0639\u0629 \u0628\u0631\u0646\u0633\u062A\u0648\u0646 \u0645\u0646 1936 \u0648\u062D\u062A\u0649 1938 \u0648\u0639\u0645\u0644 \u0641\u064A \u0645\u0643\u062A\u0628 \u0627\u0644\u0628\u0631\u064A\u0637\u0627\u0646\u064A\u064A\u0646 \u0627\u0644\u0623\u062C\u0627\u0646\u0628.\u0641\u064A \u0639\u0627\u0645 1945 \u0627\u062A\u062D\u062F \u0628\u0627\u0644\u0645\u062E\u0628\u0631 \u0627\u0644\u0641\u064A\u0632\u064A\u0627\u0626\u064A \u0627\u0644\u0648\u0637\u0646\u064A \u0641\u064A \u0644\u0646\u062F\u0646 \u0648\u0639\u0645\u0644 \u0641\u064A \u0627\u0644\u0645\u062D\u0631\u0643 \u0627\u0644\u062D\u0627\u0633\u0648\u0628\u064A \u0627\u0644\u0622\u0644\u064A \u062D\u064A\u062B \u0637\u0648\u0631 \u0627\u0644\u062A\u0635\u0645\u064A\u0645 \u0627\u0644\u0623\u0647\u0645 \u0648\u0627\u0644\u0623\u0633\u0627\u0633\u064A \u0648\u0643\u0627\u0646\u062A \u0627\u0644\u0646\u0634\u0631\u0627\u062A \u0627\u0644\u0645\u0648\u0636\u062D\u0629 \u0644\u0644\u062D\u0627\u0633\u0648\u0628 \u0641\u064A \u0627\u0644\u0639\u0635\u0631 \u0627\u0644\u062D\u062F\u064A\u062B \u0622\u0646\u0630\u0627\u0643 \u0628\u0634\u0643\u0644 \u063A\u064A\u0631 \u0645\u062A\u0648\u0642\u0639 4 \u0643\u064A\u0644\u0648 \u0628\u0627\u064A\u062A (4K. byte) \u0643\u062D\u062C\u0645 \u062A\u062E\u0632\u064A\u0646.\u0641\u064A \u0639\u0627\u0645 1948 \u0623\u0635\u0628\u062D \u062A\u0648\u0631\u064A\u0646\u063A \u0627\u0644\u0648\u0643\u064A\u0644 \u0627\u0644\u0625\u062F\u0627\u0631\u064A \u0644\u0644\u0645\u062E\u062A\u0628\u0631 \u0627\u0644\u062D\u0627\u0633\u0648\u0628\u064A \u0641\u064A \u0645\u0627\u0646\u0634\u0633\u062A\u0631 \u062D\u064A\u062B \u0643\u0627\u0646 \u0623\u0648\u0644 \u062D\u0627\u0633\u0628 \u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A \u0642\u0627\u0628\u0644 \u0644\u0644\u0628\u0631\u0645\u062C\u0629 \u0648\u062C\u0627\u0647\u0632 \u0644\u0644\u0639\u0645\u0644 \u0642\u062F \u062A\u0645 \u062A\u0635\u0646\u064A\u0639\u0647. \u0643\u0645\u0627 \u0623\u0646\u0647 \u0623\u064A\u0636\u0627\u064B \u0639\u0645\u0644 \u0641\u064A \u0646\u0638\u0631\u064A\u0627\u062A \u0627\u0644\u0630\u0643\u0627\u0621 \u0627\u0644\u0635\u0646\u0627\u0639\u064A \u0648\u0641\u064A \u062A\u0637\u0628\u064A\u0642\u0627\u062A \u0627\u0644\u0646\u0638\u0631\u064A\u0629 \u0627\u0644\u0631\u064A\u0627\u0636\u064A\u0629 \u0644\u0644\u0638\u0648\u0627\u0647\u0631 \u0627\u0644\u0628\u064A\u0648\u0644\u0648\u062C\u064A\u0629.\u0648\u0641\u064A \u0639\u0627\u0645 1952 \u0637\u0628\u0639 \u0646\u0634\u0631\u0629 \u0639\u0646 \u062F\u0631\u0627\u0633\u0627\u062A\u0647 \u0644\u0644\u0640Morphogenesis \u0627\u0644\u062A\u0637\u0648\u064A\u0631 \u0644\u0646\u0645\u0648\u0630\u062C \u0648\u0634\u0643\u0644 \u0627\u0644\u0643\u0627\u0626\u0646 \u0627\u0644\u062D\u064A \u0627\u0644\u0645\u0639\u0627\u0635\u0631 (\u0645\u062D\u0643\u0627\u0629) \u0627\u0639\u062A\u0642\u0644 \u062A\u0648\u0631\u0646\u063A \u0644\u0627\u0646\u062A\u0647\u0627\u0643\u0647 \u0645\u0646\u0638\u0648\u0645\u0629 \u0642\u0648\u0627\u0646\u064A\u0646 \u0627\u0644\u0634\u0630\u0648\u0630 \u0627\u0644\u062C\u0646\u0633\u064A \u0641\u064A \u0639\u0627\u0645 1952 \u0648\u0645\u0627\u062A \u0628\u0645\u0627\u062F\u0629 \u0633\u064A\u0627\u0646\u064A\u062F \u0627\u0644\u0628\u0648\u062A\u0627\u0633\u064A\u0648\u0645 \u0627\u0644\u0633\u0627\u0645\u0629 \u0628\u0639\u062F \u0633\u0646\u062A\u064A\u0646 \u0623\u064A \u0641\u064A \u0639\u0627\u0645 1954.\u0622\u0644\u0627\u0646 \u062A\u0648\u0631\u0646\u063A \u0643\u0627\u0646 \u0645\u062B\u0644\u064A \u0627\u0644\u062C\u0646\u0633. \u0641\u064A 1952, \u0627\u0639\u062A\u0631\u0641 \u0628\u0645\u0645\u0627\u0631\u0633\u062A\u0647 \u0644\u0644\u062C\u0646\u0633 \u0645\u0639 \u0631\u062C\u0644. \u0641\u064A \u0630\u0644\u0643 \u0627\u0644\u0648\u0642\u062A \u0641\u064A \u0625\u0646\u062C\u0644\u062A\u0631\u0627\u060C \u0627\u0644\u0645\u062B\u0644\u064A\u0629 \u0627\u0644\u062C\u0646\u0633\u064A\u0629 \u0643\u0627\u0646\u062A \u062A\u0639\u062A\u0628\u0631 \u0639\u0644\u0649 \u0623\u0646\u0647\u0627 \u0645\u0631\u0636 \u0646\u0641\u0633\u064A."@ar ,
+		"Alan Mathison Turing (Londen, 23 juni 1912 \u2013 Wilmslow, 7 juni 1954) was een Britse wiskundige, computerpionier en informaticus, mathematisch bioloog en logicus."@nl ,
+		"Alan Mathison Turing, OBE (Paddington, Londres, 23 de junio de 1912-Wilmslow, Cheshire, 7 de junio de 1954), fue un matem\u00E1tico, l\u00F3gico, cient\u00EDfico de la computaci\u00F3n, cript\u00F3grafo, fil\u00F3sofo, maratoniano y corredor de ultra distancia brit\u00E1nico. Es considerado uno de los padres de la ciencia de la computaci\u00F3n y precursor de la inform\u00E1tica moderna. Proporcion\u00F3 una influyente formalizaci\u00F3n de los conceptos de algoritmo y computaci\u00F3n: la m\u00E1quina de Turing. Formul\u00F3 su propia versi\u00F3n de la hoy ampliamente aceptada tesis de Church-Turing. Durante la Segunda Guerra Mundial, trabaj\u00F3 en descifrar los c\u00F3digos nazis, particularmente los de la m\u00E1quina Enigma, y durante un tiempo fue el director de la secci\u00F3n Naval Enigma de Bletchley Park. Tras la guerra dise\u00F1\u00F3 uno de los primeros computadores electr\u00F3nicos programables digitales en el Laboratorio Nacional de F\u00EDsica del Reino Unido y poco tiempo despu\u00E9s construy\u00F3 otra de las primeras m\u00E1quinas en la Universidad de M\u00E1nchester. En el campo de la inteligencia artificial es conocido sobre todo por la concepci\u00F3n del test de Turing, un criterio seg\u00FAn el cual puede juzgarse la inteligencia de una m\u00E1quina si sus respuestas en la prueba son indistinguibles de las de un ser humano. La carrera de Turing termin\u00F3 s\u00FAbitamente despu\u00E9s de ser procesado por ser homosexual. Dos a\u00F1os despu\u00E9s de su condena muri\u00F3, seg\u00FAn la versi\u00F3n oficial por suicidio, pero su muerte ha dado lugar a otras hip\u00F3tesis incluida la del asesinato. El 24 de diciembre de 2013, la reina Isabel II promulg\u00F3 el edicto por el que se exoner\u00F3 oficialmente al matem\u00E1tico, quedando anulados todos los cargos en su contra."@es ,
+		"Alan Mathison Turing OBE FRS (/\u02C8tj\u028A\u0259r\u026A\u014B/; 23 June 1912 \u2013 7 June 1954) was a pioneering British computer scientist, mathematician, logician, cryptanalyst and theoretical biologist. He was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general purpose computer. Turing is widely considered to be the father of theoretical computer science and artificial intelligence. During the Second World War, Turing worked for the Government Code and Cypher School (GC&CS) at Bletchley Park, Britain's codebreaking centre. For a time he led Hut 8, the section responsible for German naval cryptanalysis. He devised a number of techniques for breaking German ciphers, including improvements to the pre-war Polish bombe method and an electromechanical machine that could find settings for the Enigma machine. Turing played a pivotal role in cracking intercepted coded messages that enabled the Allies to defeat the Nazis in many crucial engagements, including the Battle of the Atlantic; it has been estimated that this work shortened the war in Europe by as many as two to four years. After the war, he worked at the National Physical Laboratory, where he designed the ACE, among the first designs for a stored-program computer. In 1948 Turing joined Max Newman's Computing Laboratory at the University of Manchester, where he helped develop the Manchester computers and became interested in mathematical biology. He wrote a paper on the chemical basis of morphogenesis, and predicted oscillating chemical reactions such as the Belousov\u2013Zhabotinsky reaction, first observed in the 1960s. Turing was prosecuted in 1952 for homosexual acts, when such behaviour was still a criminal act in the UK. He accepted treatment with DES (chemical castration) as an alternative to prison. Turing died in 1954, 16 days before his 42nd birthday, from cyanide poisoning. An inquest determined his death as suicide, but it has been noted that the known evidence is equally consistent with accidental poisoning. In 2009, following an Internet campaign, British Prime Minister Gordon Brown made an on behalf of the British government for \"the appalling way he was treated\". Queen Elizabeth II granted him a posthumous pardon in 2013."@en ;
+	dbo:birthName	"Alan Mathison Turing"@en ;
+	dbo:nationality	dbr:British_people ;
+	dbp:name	"Alan Turing"@en ;
+	dbo:birthPlace	dbr:London ,
+		dbr:Maida_Vale ;
+	dbp:birthPlace	"Maida Vale, London, England"@en ;
+	dbo:birthDate	"1912-06-23"^^xsd:date ;
+	dbo:wikiPageID	1208 ;
+	dbo:wikiPageRevisionID	708274644 ;
+	dbp:birthDate	"1912-06-23"^^xsd:date ;
+	dbp:birthName	"Alan Mathison Turing"@en ;
+	dbo:almaMater	dbr:Princeton_University ,
+		<http://dbpedia.org/resource/King\u0027s_College,_Cambridge> ,
+		dbr:Sherborne_School ;
+	dbo:knownFor	dbr:LU_decomposition ,
+		dbr:Cryptanalysis_of_the_Enigma ,
+		dbr:Turing_machine ,
+		dbr:Turing_test ;
+	dbo:wikiPageExternalLink	<http://www.turing.org.uk/bio/part1.html> ,
+		<http://www.turingarchive.org/> ,
+		<http://www.oldenbourg-verlag.de/wissenschaftsverlag/konrad-zuse-und-schweiz/9783486713664> ,
+		<http://www.turingcentenary.eu/> ,
+		<https://books.google.com/?id=C9WQbm4ovFoC&pg=PA481&dq=alan+turing+father+of+computer+science#v=onepage&q&f=false> ,
+		<http://timesofindia.indiatimes.com/home/stoi/deep-focus/A-House-for-Mr-Nilekani/articleshow/28420199.cms/> ,
+		<http://www.radiolab.org/blogs/radiolab-blog/2012/mar/19/turing-problem/> .
+@prefix ns35:	<http://turing.pilosopiya.com/> .
+dbr:Alan_Turing	dbo:wikiPageExternalLink	ns35:conference ,
+		<http://turingfilm.com/> ,
+		<http://cie2012.eu/> ,
+		<http://purl.umn.edu/107493> ,
+		<http://oldshirburnian.org.uk/wp-content/uploads/2015/09/TURING-Alan-Mathison.pdf> ,
+		<http://cryptocellar.org/Turing/> ,
+		<http://www.rutherfordjournal.org/article010111.html> ,
+		<http://openplaques.org/people/368> ,
+		<https://webspace.princeton.edu/users/jedwards/Turing%20Centennial%202012/Mudd%20Archive%20files/12285_AC100_Turing_1938.pdf> ,
+		<http://www.turing.org.uk/> ,
+		<http://www.ellsbury.com/gne/gne-000.htm> ,
+		<http://plato.stanford.edu/entries/turing/> ,
+		<http://www.comlab.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf> ,
+		<http://www.rutherfordjournal.org/article040101.html> ,
+		<http://www.ellsbury.com/hut8/hut8-000.htm> ,
+		<http://www.alanturing.net/> ,
+		<http://blog.stephenwolfram.com/2012/06/happy-100th-birthday-alan-turing/> ;
+	dbp:field	dbr:Logic ,
+		dbr:Computer_science ,
+		dbr:Cryptanalysis ,
+		dbr:Mathematical_and_theoretical_biology ,
+		dbr:Mathematics ;
+	dbp:prizes	<http://dbpedia.org/resource/Smith\u0027s_Prize> ,
+		"*"@en ,
+		dbr:Order_of_the_British_Empire ,
+		dbr:Royal_Society .
+dbr:Joan_Clarke	dbo:partner	dbr:Alan_Turing ;
+	dbp:partner	dbr:Alan_Turing .

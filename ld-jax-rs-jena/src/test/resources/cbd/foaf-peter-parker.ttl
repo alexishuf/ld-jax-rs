@@ -1,0 +1,14 @@
+@prefix  rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix  cbd: <http://example.org/cbd#>.
+
+[
+  a foaf:Person, cbd:TLR;
+  foaf:name "Peter Parker";
+  foaf:gender "Male";
+  foaf:title "Mr";
+  foaf:givenname "Peter";
+  foaf:family_name "Parker";
+  foaf:homepage <http://www.peterparker.com>;
+  foaf:weblog  <http://www.peterparker.com/blog/>
+].
