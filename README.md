@@ -68,7 +68,7 @@ Providing a `Class<? extends TraverserPredicate>` allows adding custom code as a
 rules. See the javadoc for details.     
  
 ## Footnotes
-<a name="#footnote1"><sup>1</sup></a>: Proper content negotiation would require rather large 
+<a name="footnote1"><sup>1</sup></a>: Proper content negotiation would require rather large 
 and boring to maintain `@Produces()` and `@Consumes()` annotations. In the presented example, 
 a client that sends some non-sense along with proper supported media types, risks getting a 
 unfair 500 response.
