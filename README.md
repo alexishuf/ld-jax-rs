@@ -15,8 +15,8 @@ Only Jena is supported at the moment.
 * `ld-jax-rs-core` Anything that is not dependent of a specific RDF library or other format. 
   Contains most of the functionality logic.
 * `ld-jax-rs-jena` JAX-RS Providers specific to Jena:
-** Message body writers and readers for `Model`
-** Message body writer for `Resource 
+  * Message body writers and readers for `Model`
+  * Message body writer for `Resource 
 
 ## Using
 
@@ -36,7 +36,9 @@ ResourceConfig application = new ResourceConfig();
 JenaProviders.getProviders().forEach(application::register);
 ```
 
-You can then send/receive whole jena Models using all syntaxes supported by:
+You can then send/receive whole jena Models using all syntaxes supported by Jena. The following 
+example is a RDF translator service, controlled (poorly[<sup>1</sup>](#footnote1)) by 
+Content Negotiation: 
  
 ```java
 @Path("translate")
@@ -62,5 +64,11 @@ of `Resource`s:
 
 The `@CBD` annotation supports several arguments that deviate from the W3C submission, 
 such as ignoring reifications, treating named nodes as blank nodes, max path limits, etc. 
-See the javadoc for details.   
+Providing a `Class<? extends TraverserPredicate>` allows adding custom code as a to the traversal 
+rules. See the javadoc for details.     
  
+## Footnotes
+<a name="#footnote1"><sup>1</sup></a>: Proper content negotiation would require rather large 
+and boring to maintain `@Produces()` and `@Consumes()` annotations. In the presented example, 
+a client that sends some non-sense along with proper supported media types, risks getting a 
+unfair 500 response.
