@@ -1,8 +1,8 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.model.rdf;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Graph;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Triple;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Graph;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

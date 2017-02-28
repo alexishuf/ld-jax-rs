@@ -1,7 +1,7 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.inmemory;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Triple;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
 
 import javax.annotation.Nonnull;
 

@@ -1,6 +1,6 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.jena.impl.model;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Graph;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Graph;
 import br.ufsc.inf.lapesd.ld_jaxrs.model.rdf.GraphTest;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;

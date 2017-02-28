@@ -1,7 +1,7 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.jena.impl.model;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Triple;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
 import org.apache.jena.rdf.model.Statement;
 
 import javax.annotation.Nonnull;

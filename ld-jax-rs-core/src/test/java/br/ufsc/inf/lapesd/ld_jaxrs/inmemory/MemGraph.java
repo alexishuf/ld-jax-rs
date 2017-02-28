@@ -1,10 +1,10 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.inmemory;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Graph;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.PropertySpec;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Triple;
 import br.ufsc.inf.lapesd.ld_jaxrs.core.traverser.TraverserListener;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Graph;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.PropertySpec;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.SetMultimap;
 
@@ -13,11 +13,11 @@ import javax.annotation.Nullable;
 import java.util.*;
 
 public class MemGraph implements Graph, TraverserListener {
-    private HashSet<Triple> triples = new HashSet<Triple>();
+    private HashSet<Triple> triples = new HashSet<>();
     private final SetMultimap<Node, Triple> subjectIndex = HashMultimap.create();
     private final SetMultimap<Node, Triple> predicateIndex = HashMultimap.create();
     private final SetMultimap<Node, Triple> objectIndex = HashMultimap.create();
-    private final Map<String, Node> uriMap = new HashMap<String, Node>();
+    private final Map<String, Node> uriMap = new HashMap<>();
 
     public void add(Triple triple) {
         triples.add(triple);
@@ -78,7 +78,7 @@ public class MemGraph implements Graph, TraverserListener {
 
     private <T> Set<T> join(@Nullable Set<T> a, @Nonnull Set<T> b) {
         if (a == null) return b;
-        HashSet<T> join = new HashSet<T>(a);
+        HashSet<T> join = new HashSet<>(a);
         join.retainAll(b);
         return join;
     }
@@ -87,7 +87,8 @@ public class MemGraph implements Graph, TraverserListener {
     public Iterator<Node> querySubjects(PropertySpec... properties) {
         Set<Node> set = null;
         for (PropertySpec spec : properties) {
-            Set<Node> specSet = new HashSet<Node>();
+            Set<Node> specSet;
+            specSet = new HashSet<>();
             Iterator<Triple> it = query(null, spec.getPredicate(), spec.getObject());
             while (it.hasNext())
                 specSet.add(it.next().getSubject());

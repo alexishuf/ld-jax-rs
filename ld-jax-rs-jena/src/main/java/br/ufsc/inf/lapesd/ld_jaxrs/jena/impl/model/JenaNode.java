@@ -1,6 +1,6 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.jena.impl.model;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Resource;

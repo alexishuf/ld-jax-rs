@@ -1,6 +1,6 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.model.rdf;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Graph;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Graph;
 
 import java.io.InputStream;
 

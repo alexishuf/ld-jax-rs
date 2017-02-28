@@ -20,8 +20,40 @@ public class CBDTraverserTest {
                         new CBDTraverser().setMaxPath(1).setReifications(false),
                         TestGraphs.twoFriendsCBD_A_1()},
                 {TestGraphs.twoFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false),
+                        TestGraphs.twoFriendsCBD_A_1()},
+                {TestGraphs.twoFriends(), MemNode.createNamed("A"),
                         new CBDTraverser().setMaxPath(1).setReifications(true),
                         TestGraphs.twoFriendsCBDReification_A_1()},
+                {TestGraphs.twoFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setMaxPath(1).setReifications(false).setTraverseNamed(true),
+                        TestGraphs.twoFriendsCBDNamed_A_1()},
+                {TestGraphs.twoFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true),
+                        TestGraphs.twoFriendsCBDNamed_A_1()},
+                {TestGraphs.threeFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true),
+                        TestGraphs.threeFriendsNamed_A()},
+                {TestGraphs.threeFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setMaxPath(1),
+                        TestGraphs.threeFriendsNamed_A_1()},
+                {TestGraphs.threeFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setMaxPathFromFirstNamed(1),
+                        TestGraphs.threeFriendsNamed_A_Named1()},
+                {TestGraphs.bNodePathLim(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setMaxPathFromFirstBlank(0),
+                        TestGraphs.bNodePathLim_A_0()},
+                {TestGraphs.bNodePathLim(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setMaxPathFromFirstBlank(1),
+                        TestGraphs.bNodePathLim_A_1()},
+                {TestGraphs.chain(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setTraverserPredicate(new TestGraphs.BlacklistTraverser_B()),
+                        TestGraphs.chainCut_B()},
         };
     }
 

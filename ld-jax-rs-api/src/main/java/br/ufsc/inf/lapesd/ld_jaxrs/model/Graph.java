@@ -1,4 +1,4 @@
-package br.ufsc.inf.lapesd.ld_jaxrs.core.model;
+package br.ufsc.inf.lapesd.ld_jaxrs.model;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;

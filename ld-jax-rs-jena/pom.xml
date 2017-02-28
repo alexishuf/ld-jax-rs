@@ -62,7 +62,7 @@
 
     <dependency>
       <groupId>br.ufsc.inf.lapesd.ld-jax-rs</groupId>
-      <artifactId>ld-jax-rs-core</artifactId>
+      <artifactId>ld-jax-rs-api</artifactId>
       <type>test-jar</type>
       <version>1.0-SNAPSHOT</version>
       <scope>test</scope>

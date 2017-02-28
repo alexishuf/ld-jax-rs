@@ -1,10 +1,10 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.jena.impl.model;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Graph;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.PropertySpec;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Triple;
 import br.ufsc.inf.lapesd.ld_jaxrs.core.traverser.TraverserListener;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Graph;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.PropertySpec;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
 import org.apache.commons.collections4.iterators.TransformIterator;
 import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ResIterator;

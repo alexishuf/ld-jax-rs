@@ -1,7 +1,7 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.core.traverser;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Graph;
-import br.ufsc.inf.lapesd.ld_jaxrs.core.model.Node;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Graph;
+import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
 
 import javax.annotation.Nonnull;
 
