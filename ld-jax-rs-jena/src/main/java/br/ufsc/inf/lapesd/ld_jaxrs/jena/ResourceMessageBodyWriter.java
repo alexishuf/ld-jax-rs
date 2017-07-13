@@ -20,6 +20,8 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 import java.util.Set;
 
+import static javax.ws.rs.core.Response.Status.INTERNAL_SERVER_ERROR;
+
 /**
  * Writes a {@link Resource} to a JAX-RS message.
  */
@@ -52,10 +54,16 @@ public class ResourceMessageBodyWriter implements MessageBodyWriter<Resource> {
     public void writeTo(Resource resource, Class<?> aClass, Type type, Annotation[] annotations,
                         MediaType mediaType, MultivaluedMap<String, Object> multivaluedMap,
                         OutputStream outputStream) throws IOException, WebApplicationException {
-        Traverser traverser = TraverserRegistry.get().selectOrWebApplicationException(annotations);
+        if (resource.getModel() == null) {
+            throw new WebApplicationException("ResourceMessageBodyWriter cannot handle Resource " +
+                    resource.toString() +", which has no model.", INTERNAL_SERVER_ERROR);
+        }
+        JenaModelGraph graph = new JenaModelGraph(resource.getModel());
+        Traverser traverser = TraverserRegistry.get()
+                .selectOrWebApplicationException(annotations, graph);
         Model out = ModelFactory.createDefaultModel();
         try {
-            traverser.traverse(new JenaModelGraph(resource.getModel()), new JenaNode(resource),
+            traverser.traverse(graph, new JenaNode(resource),
                     new JenaModelGraph(out));
             new ModelMessageBodyWriter().writeTo(out, out.getClass(),
                     out.getClass().getGenericSuperclass(), annotations, mediaType,

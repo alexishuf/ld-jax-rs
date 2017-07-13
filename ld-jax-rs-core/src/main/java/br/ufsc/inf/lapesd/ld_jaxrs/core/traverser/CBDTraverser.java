@@ -79,6 +79,11 @@ public class CBDTraverser implements Traverser {
         return this;
     }
 
+    @Override
+    public boolean supportsGraph(@Nonnull Graph graph) {
+        return true;
+    }
+
     public void traverse(@Nonnull Graph graph, @Nonnull Node node,
                          @Nonnull TraverserListener listener) {
         Set<Node> visited = new HashSet<>();

@@ -6,10 +6,7 @@ import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
 import br.ufsc.inf.lapesd.ld_jaxrs.model.PropertySpec;
 import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
 import org.apache.commons.collections4.iterators.TransformIterator;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ResIterator;
-import org.apache.jena.rdf.model.Resource;
-import org.apache.jena.rdf.model.StmtIterator;
+import org.apache.jena.rdf.model.*;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -26,12 +23,22 @@ public final class JenaModelGraph implements Graph, TraverserListener {
         this.model = model;
     }
 
+    public Model getModel() {
+        return model;
+    }
+
     @Override
-    public void add(Triple triple) {
-        if (triple == null) throw new NullPointerException();
-        if (!(triple instanceof JenaTriple))
-            throw new IllegalArgumentException("Triple not a JenaTriple");
-        model.add(((JenaTriple) triple).getStatement());
+    public void add(@Nonnull Triple triple) {
+        Statement statement;
+        if (triple instanceof JenaTriple) {
+            statement = ((JenaTriple) triple).getStatement();
+        } else {
+            statement = ResourceFactory.createStatement(
+                    JenaNode.toResource(triple.getSubject()),
+                    JenaNode.toProperty(triple.getPredicate()),
+                    JenaNode.toRDFNode(triple.getObject()));
+        }
+        model.add(statement);
     }
 
     @Nonnull

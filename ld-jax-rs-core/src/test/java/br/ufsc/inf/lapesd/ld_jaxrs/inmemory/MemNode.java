@@ -29,11 +29,28 @@ public class MemNode implements Node {
     }
 
     public String getURI() { return uri; }
-    public String getLiteralValue() { return literalValue; }
 
     public boolean isBlankNode() { return type == Type.Blank; }
     public boolean isResource() { return !isLiteral(); }
     public boolean isLiteral() { return type == Type.Literal; }
+
+    @Override
+    public String getLexicalForm() {
+        if (!isLiteral()) throw new IllegalArgumentException("Not a literal");
+        return literalValue;
+    }
+
+    @Override
+    public String getLanguage() {
+        if (!isLiteral()) throw new IllegalArgumentException("Not a literal");
+        return null;
+    }
+
+    @Override
+    public String getDatatypeURI() {
+        if (!isLiteral()) throw new IllegalArgumentException("Not a literal");
+        return null;
+    }
 
     @Override
     public String toString() {
@@ -51,9 +68,7 @@ public class MemNode implements Node {
 
         if (type == Type.Blank)
             return this == o;
-        if (type != memNode.type) return false;
-        if (uri != null ? !uri.equals(memNode.uri) : memNode.uri != null) return false;
-        return literalValue != null ? literalValue.equals(memNode.literalValue) : memNode.literalValue == null;
+        return type == memNode.type && (uri != null ? uri.equals(memNode.uri) : memNode.uri == null) && (literalValue != null ? literalValue.equals(memNode.literalValue) : memNode.literalValue == null);
     }
 
     @Override
