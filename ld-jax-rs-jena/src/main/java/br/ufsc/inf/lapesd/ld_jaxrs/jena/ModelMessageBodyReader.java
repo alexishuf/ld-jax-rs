@@ -43,7 +43,8 @@ public class ModelMessageBodyReader implements MessageBodyReader<Model> {
     @Override
     public boolean isReadable(Class<?> aClass, Type type, Annotation[] annotations,
                               MediaType mediaType) {
-        return aClass == Model.class && getSupportedMediaTypes().contains(simplify(mediaType));
+        return Model.class.isAssignableFrom(aClass)
+                && getSupportedMediaTypes().contains(simplify(mediaType));
     }
 
     @Override
