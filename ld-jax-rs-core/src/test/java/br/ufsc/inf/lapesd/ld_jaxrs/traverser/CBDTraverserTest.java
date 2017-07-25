@@ -54,6 +54,18 @@ public class CBDTraverserTest {
                         new CBDTraverser().setReifications(false).setTraverseNamed(true)
                                 .setTraverserPredicate(new TestGraphs.BlacklistTraverser_B()),
                         TestGraphs.chainCut_B()},
+                {TestGraphs.chainCut_B(), MemNode.createNamed("E"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setSymmetric(true),
+                        TestGraphs.chainCut_B_noB()},
+                {TestGraphs.chain(), MemNode.createNamed("E"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setSymmetric(true),
+                        TestGraphs.chain()},
+                {TestGraphs.symmetric(), MemNode.createNamed("D"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setSymmetric(true),
+                        TestGraphs.symmetricResult()},
         };
     }
 

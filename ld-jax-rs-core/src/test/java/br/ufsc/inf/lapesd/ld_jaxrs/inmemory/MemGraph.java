@@ -113,7 +113,7 @@ public class MemGraph implements Graph, TraverserListener {
         for (Triple triple : subjectIndex.values()) {
             str += triple.toString() + "; ";
         }
-        return str.substring(0, str.length()-2);
+        return str.isEmpty() ? str : str.substring(0, str.length()-2);
     }
 
     @Override

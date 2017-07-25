@@ -21,6 +21,7 @@ import java.util.*;
 @TraversalStrategy(CBD.class)
 public class CBDTraverser implements Traverser {
     private int maxPath = Integer.MAX_VALUE;
+    private boolean symmetric = false;
     private boolean reifications = true;
     private boolean traverseNamed = false;
     private int maxPathFromFirstNamed = Integer.MAX_VALUE;
@@ -29,6 +30,7 @@ public class CBDTraverser implements Traverser {
 
     public CBDTraverser(CBD annotation) {
         maxPath = annotation.maxPath();
+        symmetric = annotation.symmetric();
         reifications = annotation.reifications();
         traverseNamed = annotation.traverseNamed();
         maxPathFromFirstNamed = annotation.maxPathFromFirstNamed();
@@ -48,6 +50,7 @@ public class CBDTraverser implements Traverser {
     }
 
     public int getMaxPath() { return maxPath; }
+    public boolean getSymmetric() { return symmetric; }
     public boolean getReifications() { return reifications; }
     public boolean getTraverseNamed() { return traverseNamed; }
     public int getMaxPathFromFirstNamed() { return maxPathFromFirstNamed; }
@@ -56,6 +59,10 @@ public class CBDTraverser implements Traverser {
 
     public CBDTraverser setMaxPath(int maxPath) {
         this.maxPath = maxPath;
+        return this;
+    }
+    public CBDTraverser setSymmetric(boolean symmetric) {
+        this.symmetric = symmetric;
         return this;
     }
     public CBDTraverser setReifications(boolean reifications) {
@@ -86,36 +93,42 @@ public class CBDTraverser implements Traverser {
 
     public void traverse(@Nonnull Graph graph, @Nonnull Node node,
                          @Nonnull TraverserListener listener) {
-        Set<Node> visited = new HashSet<>();
+        Set<Node> visitedOut = new HashSet<>(), visitedIn = new HashSet<>();
         ReificationCollector collector = reifications ? new ReificationCollector(graph) : null;
-        traverse(graph, node, listener, visited, collector);
+        traverse(graph, State.out(node), listener, visitedOut, collector);
+        if (symmetric)
+            traverse(graph, State.in(node), listener, visitedIn, collector);
+
 
         if (collector != null) {
-            for (Node reification : collector.collected)
-                traverse(graph, reification, listener, visited, null);
+            for (Node reification : collector.collected) {
+                traverse(graph, State.out(reification), listener, visitedOut, null);
+                if (symmetric)
+                    traverse(graph, State.in(reification), listener, visitedIn, null);
+            }
         }
     }
 
-    private void traverse(@Nonnull Graph graph, @Nonnull Node node,
+    private void traverse(@Nonnull Graph graph, @Nonnull State start,
                           @Nonnull TraverserListener listener,
                           @Nonnull Set<Node> visited,
                           @Nullable ReificationCollector adder) {
         Queue<State> queue = new LinkedList<>();
-        queue.add(new State(node));
+        queue.add(start);
         while (!queue.isEmpty()) {
             State s = queue.remove();
             if (visited.contains(s.node)) continue;
             visited.add(s.node);
 
-            Iterator<Triple> it = graph.query(s.node, null, null);
+            Iterator<Triple> it = s.direction.query(graph, s.node);
             while (it.hasNext()) {
                 Triple triple = it.next();
                 listener.add(triple);
                 if (adder != null) adder.add(graph, triple);
 
-                Object predicateState = shouldTraverse(s, triple.getObject());
+                Object predicateState = shouldTraverse(s, s.direction.nextNode(triple));
                 if (predicateState != null)
-                    queue.add(s.next(triple.getObject(), predicateState));
+                    queue.add(s.next(triple, predicateState));
             }
         }
     }
@@ -136,8 +149,8 @@ public class CBDTraverser implements Traverser {
 
     @Override
     public String toString() {
-        return String.format("CBDTraverser@%h(maxPath=%d, reifications=%b)",
-                this, maxPath, reifications);
+        return String.format("CBDTraverser@%h(maxPath=%d, sym=%b reifications=%b)",
+                this, maxPath, symmetric, reifications);
     }
 
     private static final class ReificationCollector {
@@ -159,27 +172,65 @@ public class CBDTraverser implements Traverser {
         }
     }
 
+    private enum Direction {
+        IN,
+        OUT;
+
+        public Iterator<Triple> query(@Nonnull Graph graph, @Nonnull Node node) {
+            switch (this) {
+                case  IN: return graph.query(null, null, node);
+                case OUT: return graph.query(node, null, null);
+            }
+            throw new IllegalArgumentException();
+        }
+
+        public Node nextNode(@Nonnull Triple triple) {
+            switch (this) {
+                case IN: return triple.getSubject();
+                case OUT: return triple.getObject();
+            }
+            throw new IllegalArgumentException();
+        }
+
+        public String symbol() {
+            switch (this) {
+                case  IN: return "<-";
+                case OUT: return "->";
+            }
+            throw new IllegalArgumentException();
+        }
+    }
+
     private static final class State {
         final Node node;
+        final Direction direction;
         final int depth;
         final int firstNamedDepth;
         final int firstBlankDepth;
         final Object predicateState;
 
-        public State(Node node) {
-            this(node, 0, -1, -1, null);
+        public static State out(Node node) {
+            return new State(node, Direction.OUT);
+        }
+        public static State in(Node node) {
+            return new State(node, Direction.IN);
+        }
+        public State(Node node, Direction direction) {
+            this(node, direction, 0, -1, -1, null);
         }
 
-        State(Node node, int depth, int firstNamedDepth, int firstBlankDepth,
+        State(Node node, Direction direction, int depth, int firstNamedDepth, int firstBlankDepth,
               Object predicateState) {
             this.node = node;
+            this.direction = direction;
             this.depth = depth;
             this.firstNamedDepth = firstNamedDepth;
             this.firstBlankDepth = firstBlankDepth;
             this.predicateState = predicateState;
         }
 
-        State next(Node node, Object predicateState) {
+        State next(Triple triple, Object predicateState) {
+            Node node = direction.nextNode(triple);
             int fnd = firstNamedDepth;
             if (fnd < 0 && node.isResource() && !node.isBlankNode())
                 fnd = 0;
@@ -191,12 +242,12 @@ public class CBDTraverser implements Traverser {
             else if (fbd >= 0)
                 ++fbd;
 
-            return new State(node, depth + 1, fnd, fbd, predicateState);
+            return new State(node, direction, depth + 1, fnd, fbd, predicateState);
         }
 
         @Override
         public String toString() {
-            return String.format("(%s, depth=%d)", node, depth);
+            return String.format("(%s, %s, depth=%d)", node,  direction.symbol(), depth);
         }
     }
 }

@@ -24,6 +24,12 @@ public @interface CBD {
     int maxPath() default Integer.MAX_VALUE;
 
     /**
+     * Include in the CBD all paths that end in the start node, in addition to those
+     * that originate from it.
+     */
+    boolean symmetric() default false;
+
+    /**
      * IF true (the default) CBD of reifications of statements included in the root resource CBD
      * are included.
      */

@@ -154,6 +154,28 @@ public class TestGraphs {
                 .add("A", "friend", "E")
                 .add("E", "friend", "F");
     }
+    public static MemGraph chainCut_B_noB() {
+        return new MemGraph()
+                .add("A", "friend", "E")
+                .add("E", "friend", "F");
+    }
+    public static MemGraph symmetric() {
+        return new MemGraph()
+                .add("A", "friend", "C")
+                .add("C", "friend", "B")
+                .add("C", "friend", "D")
+                .add("D", "friend", "E")
+                .add("E", "friend", "F")
+                .add("G", "friend", "F")
+                .add("B", "friend", "G");
+    }
+    public static MemGraph symmetricResult() {
+        return new MemGraph()
+                .add("A", "friend", "C")
+                .add("C", "friend", "D")
+                .add("D", "friend", "E")
+                .add("E", "friend", "F");
+    }
 
     public static class BlacklistTraverser_B implements TraverserPredicate {
         @Nullable
