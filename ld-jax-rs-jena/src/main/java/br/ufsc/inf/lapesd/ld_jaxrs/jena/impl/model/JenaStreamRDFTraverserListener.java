@@ -9,9 +9,19 @@ import org.apache.jena.riot.system.StreamRDF;
  */
 public class JenaStreamRDFTraverserListener implements TraverserListener {
     private StreamRDF streamRDF;
+    private long tripleCount = 0;
+
+    public JenaStreamRDFTraverserListener(StreamRDF streamRDF) {
+        this.streamRDF = streamRDF;
+    }
+
+    public long getTripleCount() {
+        return tripleCount;
+    }
 
     @Override
     public void add(Triple triple) {
+        ++tripleCount;
         streamRDF.triple(JenaTriple.toTriple(triple));
     }
 }
