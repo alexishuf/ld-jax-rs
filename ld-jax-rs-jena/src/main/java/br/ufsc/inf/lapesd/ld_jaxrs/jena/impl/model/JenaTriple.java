@@ -1,7 +1,7 @@
 package br.ufsc.inf.lapesd.ld_jaxrs.jena.impl.model;
 
-import br.ufsc.inf.lapesd.ld_jaxrs.model.Node;
 import br.ufsc.inf.lapesd.ld_jaxrs.model.Triple;
+import org.apache.jena.rdf.model.RDFNode;
 import org.apache.jena.rdf.model.Statement;
 
 import javax.annotation.Nonnull;
@@ -19,16 +19,20 @@ public final class JenaTriple implements Triple {
     @Nonnull
     public Statement getStatement() { return statement; }
 
+    public org.apache.jena.graph.Triple getTriple() {
+        return toTriple(this);
+    }
+
     @Override
-    public Node getSubject() {
+    public JenaNode getSubject() {
         return new JenaNode(statement.getSubject());
     }
     @Override
-    public Node getPredicate() {
+    public JenaNode getPredicate() {
         return new JenaNode(statement.getPredicate());
     }
     @Override
-    public Node getObject() {
+    public JenaNode getObject() {
         return new JenaNode(statement.getObject());
     }
 
@@ -50,5 +54,12 @@ public final class JenaTriple implements Triple {
     @Override
     public int hashCode() {
         return statement.hashCode();
+    }
+
+    public static org.apache.jena.graph.Triple toTriple(Triple triple) {
+        RDFNode s = JenaNode.toRDFNode(triple.getSubject());
+        RDFNode p = JenaNode.toRDFNode(triple.getPredicate());
+        RDFNode o = JenaNode.toRDFNode(triple.getObject());
+        return new org.apache.jena.graph.Triple(s.asNode(), p.asNode(), o.asNode());
     }
 }
