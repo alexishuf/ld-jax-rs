@@ -42,6 +42,10 @@ public class CBDTraverserTest {
                         new CBDTraverser().setReifications(false).setTraverseNamed(true)
                                 .setMaxPathFromFirstNamed(1),
                         TestGraphs.threeFriendsNamed_A_Named1()},
+                {TestGraphs.threeFriends(), MemNode.createNamed("A"),
+                        new CBDTraverser().setReifications(false).setTraverseNamed(true)
+                                .setMaxPathFromFirstNamed(0),
+                        TestGraphs.threeFriendsNamed_A_Named0()},
                 {TestGraphs.bNodePathLim(), MemNode.createNamed("A"),
                         new CBDTraverser().setReifications(false).setTraverseNamed(true)
                                 .setMaxPathFromFirstBlank(0),

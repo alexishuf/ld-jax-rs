@@ -112,6 +112,14 @@ public class TestGraphs {
                 .add("C", "name", l("c"))
                 .add("C", "hasPocket", cPocket);
     }
+    public static MemGraph threeFriendsNamed_A_Named0() {
+        return new MemGraph()
+                .add("A", "friend", "B")
+                .add("A", "name", l("a"))
+                .add("B", "name", l("b"))
+                .add("B", "friend", "C")
+                .add("B", "hasPocket", bPocket);
+    }
     public static MemGraph bNodePathLim() {
         return new MemGraph()
                 .add("A", "friend", "B")
